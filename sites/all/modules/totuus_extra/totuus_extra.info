@@ -1,0 +1,5 @@
+name = Totuus Extra
+description = Totuus specific hooks
+package = Totuus Extra
+core = 7.x
+files[] = totuus_extra.module

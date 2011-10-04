@@ -1,0 +1,27 @@
+/* This file will hold the main styles for your website. */
+
+/* etusivun vasen sivupalkki */
+
+.pane-kohta-sulkeutuvat,
+.pane-viimeksi-lisatyt,
+.pane-eniten-aanestetyt
+ {
+	font-size: 0.8em;
+	background: #e6e6e6;
+	padding: 5px;
+	border-radius: 0 0 15px;
+}
+
+.pane-kohta-sulkeutuvat h2.pane-title,
+.pane-viimeksi-lisatyt h2.pane-title,
+.pane-eniten-aanestetyt h2.pane-title
+{
+	font-size: 1.4em;
+}
+
+.pane-kohta-sulkeutuvat h2 a,
+.pane-viimeksi-lisatyt h2 a,
+.pane-eniten-aanestetyt h2 a
+{
+	font-size: 0.6em;
+}

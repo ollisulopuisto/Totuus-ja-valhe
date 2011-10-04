@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file totuus_extra.module
+ * Add content field values into node css class values
+ */
+
+function totuus_extra_preprocess_node(&$variables) {
+
+  $node = $variables['node'];
+
+  $required_types = array(
+      "vaite" => "field_vaitteen_totuusarvo",
+      "argumentti" => "field_moderation",
+  );
+
+  if (isset($required_types[$node->type])) {
+    $required_field_name = $required_types[$node->type];
+    $field_value = $node->{$required_field_name}[$node->language][0]['value'];  
+    $variables['classes_array'][] = drupal_html_class($required_field_name . "-" . $field_value);
+  }
+
+}

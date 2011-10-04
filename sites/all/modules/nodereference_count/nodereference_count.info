@@ -1,0 +1,12 @@
+name = Node Reference Count
+description = Defines a field type for counting the references to a node.
+package = Fields
+core = 7.x
+dependencies[] = field
+dependencies[] = node_reference
+; Information added by drupal.org packaging script on 2011-03-23
+version = "7.x-1.x-dev"
+core = "7.x"
+project = "nodereference_count"
+datestamp = "1300882431"
+
